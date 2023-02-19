@@ -11,3 +11,10 @@ pip install -r requirements.txt
 
 python bot.py <SERVER_NAME>
 ```
+
+To Do:
+
+- Logging
+- CI/CD
+- Error handling / unit tests
+- Input validation / handling
