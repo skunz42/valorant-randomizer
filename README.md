@@ -18,3 +18,4 @@ To Do:
 - CI/CD
 - Error handling / unit tests
 - Input validation / handling
+- Linting

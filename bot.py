@@ -23,7 +23,7 @@ async def on_ready():
     for guild in client.guilds:
         if guild.name == SERVER:
             print(f"{client.user} has connected to Discord!")
-            print(f"Chilling on {client.guilds[0]}")
+            print(f"Listening on {SERVER}")
             return
 
     print(f"Couldn't find the server {SERVER} in the bot's server list.")
@@ -33,10 +33,10 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    print(message.content)
+    print(f"Message Content: {message.content}")
 
     if message.content.startswith(BASE_COMMAND):
-        handle_command(message.content)
+        await handle_command(message)
     elif message.content.lower() == "hewwo":
         await message.channel.send("uwu :3")
 

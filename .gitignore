@@ -2,3 +2,5 @@ venv/
 conifg.txt
 .env
 *.swp
+*.log
+*.py[cod]
