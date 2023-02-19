@@ -4,3 +4,4 @@ conifg.txt
 *.swp
 *.log
 *.py[cod]
+*.tmp

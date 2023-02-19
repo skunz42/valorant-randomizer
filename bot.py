@@ -2,11 +2,12 @@ import os
 import sys
 import discord
 from dotenv import load_dotenv
+
+from config.cmds_cfg import *
 from cmds.handle_cmds import handle_command
 
 NUM_CMD_ARGS = 1
 players = []
-BASE_COMMAND = "!sb"
 
 if len(sys.argv) != NUM_CMD_ARGS+1:
     print("Please enter in the form: python bot.py <Server Name>")
