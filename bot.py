@@ -35,7 +35,8 @@ async def on_message(message):
 
     print(f"Message Content: {message.content}")
 
-    if message.content.startswith(BASE_COMMAND):
+    if (len(message.content) >= len(BASE_COMMAND) and 
+        message.content[:len(BASE_COMMAND)].lower() == BASE_COMMAND):
         await handle_command(message)
     elif message.content.lower() == "hewwo":
         await message.channel.send("uwu :3")
