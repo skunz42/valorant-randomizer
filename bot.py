@@ -1,9 +1,11 @@
+'''
+'''
 import os
 import sys
 import discord
 from dotenv import load_dotenv
 
-from config.cmds_cfg import *
+from config.cmds_cfg import BASE_COMMAND
 from cmds.handle_cmds import handle_command
 
 NUM_CMD_ARGS = 1
@@ -21,6 +23,8 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
+    '''
+    '''
     for guild in client.guilds:
         if guild.name == SERVER:
             print(f"{client.user} has connected to Discord!")
@@ -31,12 +35,14 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
+    '''
+    '''
     if message.author == client.user:
         return
 
     print(f"Message Content: {message.content}")
 
-    if (len(message.content) >= len(BASE_COMMAND) and 
+    if (len(message.content) >= len(BASE_COMMAND) and
         message.content[:len(BASE_COMMAND)].lower() == BASE_COMMAND):
         await handle_command(message)
     elif message.content.lower() == "hewwo":

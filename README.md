@@ -14,8 +14,8 @@ python bot.py <SERVER_NAME>
 
 To Do:
 
-- Logging
+- Logging?
 - CI/CD
 - Error handling / unit tests
 - Input validation / handling
-- Linting
+- Linting (Vim ALE?)
