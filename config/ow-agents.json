@@ -1,0 +1,145 @@
+{
+    "agents": [
+        {
+            "name": "Winston",
+            "role": "Tank"
+        },
+        {
+            "name": "D.Va",
+            "role": "Tank"
+        },
+        {
+            "name": "Doomfist",
+            "role": "Tank"
+        },
+        {
+            "name": "Junker Queen",
+            "role": "Tank"
+        },
+        {
+            "name": "Orisa",
+            "role": "Tank"
+        },
+        {
+            "name": "Ramattra",
+            "role": "Tank"
+        },
+        {
+            "name": "Reinhardt",
+            "role": "Tank"
+        },
+        {
+            "name": "Roadhog",
+            "role": "Tank"
+        },
+        {
+            "name": "Sigma",
+            "role": "Tank"
+        },
+        {
+            "name": "Zarya",
+            "role": "Tank"
+        },
+        {
+            "name": "Ashe",
+            "role": "Damage"
+        },
+        {
+            "name": "Bastion",
+            "role": "Damage"
+        },
+        {
+            "name": "McCree",
+            "role": "Damage"
+        },
+        {
+            "name": "Echo",
+            "role": "Damage"
+        },
+        {
+            "name": "Genji",
+            "role": "Damage"
+        },
+        {
+            "name": "Hanzo",
+            "role": "Damage"
+        },
+        {
+            "name": "Junkrat",
+            "role": "Damage"
+        },
+        {
+            "name": "Mei",
+            "role": "Damage"
+        },
+        {
+            "name": "Pharah",
+            "role": "Damage"
+        },
+        {
+            "name": "Reaper",
+            "role": "Damage"
+        },
+        {
+            "name": "Sojourn",
+            "role": "Damage"
+        },
+        {
+            "name": "Soldier 76",
+            "role": "Damage"
+        },
+        {
+            "name": "Sombra",
+            "role": "Damage"
+        },
+        {
+            "name": "Symmetra",
+            "role": "Damage"
+        },
+        {
+            "name": "Torbjorn",
+            "role": "Damage"
+        },
+        {
+            "name": "Tracer",
+            "role": "Damage"
+        },
+        {
+            "name": "Widowmaker",
+            "role": "Damage"
+        },
+        {
+            "name": "Ana",
+            "role": "Healer"
+        },
+        {
+            "name": "Baptiste",
+            "role": "Healer"
+        },
+        {
+            "name": "Brigette",
+            "role": "Healer"
+        },
+        {
+            "name": "Kiriko",
+            "role": "Healer"
+        },
+        {
+            "name": "Lucio",
+            "role": "Healer"
+        },
+        {
+            "name": "Mercy",
+            "role": "Healer"
+        },
+        {
+            "name": "Moira",
+            "role": "Healer"
+        },
+        {
+            "name": "Zenyatta",
+            "role": "Healer"
+        }
+    ]
+}
+

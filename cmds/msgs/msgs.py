@@ -24,7 +24,7 @@ def get_help_ow_agents():
     '''
     resp = (f"`!sb {OVERWATCH_AGENTS_COMMAND}`\n"
             "Returns random Overwatch agents for the current players\n"
-            "args - None")
+            "args - open/role")
     return resp
 
 def get_help_players():
