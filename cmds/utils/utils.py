@@ -3,21 +3,26 @@
 
 import json
 
-FILENAME = "config/players.tmp"
-
-def write_players(players):
+def write_players(players, path):
     '''
     '''
-    with open(FILENAME, 'w', encoding='utf-8') as file:
+    with open(path, 'w', encoding='utf-8') as file:
         file.write(players)
 
-def read_players():
+def read_players(path):
     '''
     '''
     read_data = ""
-    with open(FILENAME, 'r', encoding='utf-8') as file:
+    with open(path, 'r', encoding='utf-8') as file:
         read_data = file.read()
     return "Players:\n" + read_data
+
+def read_players_list(path):
+    '''
+    '''
+    with open(path, 'r', encoding='utf-8') as file:
+        lines = [line.rstrip() for line in file]
+    return lines
 
 def read_json_file(path):
     '''
