@@ -14,7 +14,8 @@ def get_usage():
 def get_commands():
     '''
     '''
-    resp = (f"`{OVERWATCH_AGENTS_COMMAND}` - fetches random overwatch agents for the selected players.\n"
+    resp = (f"`{OVERWATCH_AGENTS_COMMAND}` - fetches random overwatch "
+            "agents for the selected players.\n"
             f"`{SET_PLAYERS_COMMAND}` - sets players for the current session\n"
             f"`{GET_PLAYERS_COMMAND}` - gets the current players")
     return resp

@@ -1,18 +1,25 @@
 '''
 '''
 
+import logging
 import random
 from cmds.utils.utils import send_message, read_json_file, read_players_list
 from cmds.help.help_cmds import handle_help_cmds
 from config.cmds_cfg import OW_JSON_PATH, PLAYERS_CFG_PATH
 
+log = logging.getLogger(__name__)
+
 async def generate_ow_open_queue(message, json_dict, players):
     '''
     '''
+    log.info("Generating open queue")
+
+    log.info("Loading agents")
     agent_set = set()
     for agent in json_dict["agents"]:
         agent_set.add(agent['name'])
 
+    log.info("Loading players")
     player_set = set()
     for player in players:
         player_set.add(player)
@@ -26,15 +33,18 @@ async def generate_ow_open_queue(message, json_dict, players):
         agent_set.remove(agent)
 
         pa_str = f"{player}: {agent}"
-        print(pa_str)
+        log.info("%s", pa_str)
         message_str += pa_str
         message_str += "\n"
 
+    log.info("%s", message_str)
     await send_message(message, message_str)
 
 async def generate_ow_role_queue(message, json_dict, players):
     '''
     '''
+    log.info("Generating role queue")
+
     for agent in json_dict["agents"]:
         print(agent['role'])
 
